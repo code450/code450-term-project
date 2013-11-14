@@ -20,6 +20,9 @@ nav, nav ul li {
 header {
     margin-bottom:30px;
 }
+hgroup {
+    margin: 20px 0 0 20px;
+}
 header h1 {
     background: transparent url(../images/logo.gif)no-repeat;
     text-indent: -9999px;
@@ -27,7 +30,13 @@ header h1 {
     width:140px;
     background-size: contain;
     display:inline-block;
-    margin: 20px 0 0 20px;
+}
+header h2 {
+    /*text-indent: -9999px;*/
+    
+    /*TEMPORARY TILL WE GET ACTUAL LOGO*/
+    /**/font-size:9px;
+    /**/font-style: italic;
 }
 nav {
     float:right;
@@ -60,4 +69,41 @@ nav select {
     border-radius: 0;
     -webkit-appearance: none;
     overflow: hidden;
+}
+.slides li {
+    position:relative;
+}
+.slideCaption {
+    width:300px;
+    position:absolute;
+    top:50px;
+    left:50px;
+    padding:20px;
+    background:#7a95a9;
+}
+.slideCaption h1 {
+    font-size:32px;
+    padding-bottom:10px;
+    border-bottom: 1px solid #fff;
+    margin-bottom:10px;
+}
+.slideCaption div {
+    font-size:22px;
+}
+.slideCaption ul li{
+    list-style-type:disc;
+    margin-left: 25px;
+}
+.btn {
+    padding:10px;
+    font-weight:bold;
+    text-decoration:none;
+    display:block;
+    margin-top:30px;
+    background: url(../images/rightArrow.png) right no-repeat;
+}
+.brown {
+    background-color:#a88c5e;
+    border: 1px solid #d6d5d3;
+    color:#fff;
 }
