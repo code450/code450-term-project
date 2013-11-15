@@ -1,19 +1,146 @@
+
+
 /*ONLY FULL WIDTH STYLES GO HERE*/
+
+/*=============================
+
+code450 Helping Hands Home Services
+Main CSS Stylesheet
+
+colors:
+orange: #da5f0b;
+dark blue: #12306E;
+light blue: #c2cddc;
+white: #fff;
+
+
+===============================*/
+
+
+
+
+
+
+/*=============================
+
+general styles
+
+===============================*/
+
+
+body{
+	background: #f1f1f1;
+	color: #da5f0b;
+	font-family: Questrial, Arial, sans-serif;
+}
+
+
+/*=============================
+
+typography
+
+===============================*/
+@import url(http://fonts.googleapis.com/css?family=Sansita+One);
+@import url(http://fonts.googleapis.com/css?family=Questrial);
+
+h1, h2, h3{
+	font-weight: 300;
+	margin: 0;
+	line-height: 45px;
+}
+
+h4, h5, h6{
+	
+	margin: 5px 0 5px 0;
+	
+}
+
+h1{
+	font-size: 48px;
+}
+
+h2{
+	/* font-weight: bold; */
+	font-size: 36px;
+}
+
+h3{
+	font-size: 24px;
+}
+
+h4{
+	font-size: 18px;
+	margin: 10px 0;/* top and bottom 10px, right and left 0*/
+}
+
+h5{
+	font-size: 13px;
+	margin: 0;
+	text-transform: capitalize;
+}
+
+p{
+	margin: 0 0 10px 0;
+}
+
+
+h3.lead{
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 35px;
+	text-align: left;
+	font-style: italic;
+	font-family: 'Sansita One', cursive, Arial, sans-serif;
+}
+
+p.lead{
+	font-size: 18px;
+	margin-left: 25px;
+	line-height: 25px;
+	text-align: left;
+	font-style: italic;
+	font-family: Questrial, Arial, san-serif;
+}
+
+
+/*=============================
+
+layout styles
+
+===============================*/
+
 
 #outerContainer {
     margin:30px auto;
-    -webkit-box-shadow: 0px -1px 2px rgba(50, 50, 50, 0.75);
+   /*  -webkit-box-shadow: 0px -1px 2px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    0px -1px 2px rgba(50, 50, 50, 0.75);
-    box-shadow:         0px -1px 2px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px -1px 2px rgba(50, 50, 50, 0.75); */
     background:#f1f1f1 url(../images/bg.png);
 }
+
 #innerContainer {
     max-width:960px;
     margin:0 auto;
 }
+
 header hgroup, header h1{
     display:inline-block;
 }
+
+
+.wrapper{/*wrapper around content div to be used on about us, services, faq, and contact pages*/
+	width: 940px;
+	padding: 0 10px;
+	margin: 0 auto;
+
+}
+
+
+/*=============================
+
+navigation
+
+===============================*/
 nav, nav ul li {
     display:inline-block;
 }
@@ -47,29 +174,38 @@ nav ul li a {
     margin: 0 5px;
     text-decoration:none;
     font-weight:bold;
-    color:#a88c5e;
+    color:#da5f0b;
+    font-size: 24px;
+    font-family: Questrial, Arial, sans-serif;
 }
 nav ul li a:hover, .active {
-    background: url(../images/menuSelected.png) no-repeat top center #a3b8c2;
-    background-size:contain;
+    background: url(../images/about_hover.png) no-repeat top center;
+    /* background-size:contain; */
     color:#fff;
 }
 nav select {
     margin:20px 20px 0 0;;
     display: none;
-    background: url(../images/downArrow.png) no-repeat right #a3b8c2;
-    background-size:contain;
+    /* background: url(../images/downArrow.png) no-repeat right #a3b8c2; */
+    /* background-size:contain; */
     width: 80px;
     height: 80px;
     padding: 5px;
     text-align:right;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 1;
-    border: 1px solid #a3b8c2;
+    /* border: 1px solid #a3b8c2; */
     border-radius: 0;
     -webkit-appearance: none;
     overflow: hidden;
 }
+
+
+/*=============================
+
+home page slider
+
+===============================*/
 .slides li {
     position:relative;
 }
@@ -86,9 +222,11 @@ nav select {
     padding-bottom:10px;
     border-bottom: 1px solid #fff;
     margin-bottom:10px;
+    color: #12306e;
 }
 .slideCaption div {
     font-size:22px;
+    color: #12306e;
 }
 .slideCaption ul li{
     list-style-type:disc;
@@ -103,7 +241,62 @@ nav select {
     background: url(../images/rightArrow.png) right no-repeat;
 }
 .brown {
-    background-color:#a88c5e;
-    border: 1px solid #d6d5d3;
-    color:#fff;
+    background-color:#da5f0b;
+    border: 1px solid #f1f1f1;
+    color:#f1f1f1;
 }
+
+
+/*=============================
+
+about us layout styles
+
+===============================*/
+
+.about{
+	height: 1300px;
+}
+
+
+/*=============================
+
+global column styles
+
+===============================*/
+
+.column{
+	float: left;
+	margin-right: 62px;
+	margin-top: 50px;
+}
+
+.four{
+	width: 350px;
+	text-align: center;
+	margin-right: 80px;
+	margin-left: 40px;
+	
+}
+
+
+
+
+/*=============================
+
+footer styles
+
+===============================*/
+
+footer{
+	/* background:#f1f1f1; */
+	height: 50px;
+	padding: 10px;
+}
+
+footer p{
+	margin-top: 300px;
+}
+
+
+
+
