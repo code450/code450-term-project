@@ -54,14 +54,24 @@ nav ul li a:hover, .active {
     background-size:contain;
     color:#fff;
 }
-nav select {
-    margin:20px 20px 0 0;;
+nav div {
+    position:absolute;
+    right:20px;
+    top:50px;
     display: none;
-    background: url(../images/downArrow.png) no-repeat right #a3b8c2;
-    background-size:contain;
+}
+nav div i {
+    position:absolute;
+    font-size: 60px;
+    padding:10px;
+    background: #a3b8c2;
+}
+nav select {
+    position:relative;
+    z-index:1;
+    background:transparent;
     width: 80px;
     height: 80px;
-    padding: 5px;
     text-align:right;
     font-size: 20px;
     line-height: 1;
@@ -69,6 +79,9 @@ nav select {
     border-radius: 0;
     -webkit-appearance: none;
     overflow: hidden;
+}
+nav select option {
+    
 }
 .slides li {
     position:relative;
@@ -102,7 +115,7 @@ nav select {
     margin-top:30px;
     background: url(../images/rightArrow.png) right no-repeat;
 }
-.brown {
+.brownBtn {
     background-color:#a88c5e;
     border: 1px solid #d6d5d3;
     color:#fff;

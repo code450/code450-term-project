@@ -2,15 +2,20 @@
 	 // DOM ready
 	 $(function() {
 	   
+      //Icon font
+      $("<i />", {
+         "class": "fa fa-list"
+      }).appendTo("nav div");
+         
       // Create the dropdown base
-      $("<select />").appendTo("nav");
+      $("<select />").appendTo("nav div");
       
       // Create default option "Go to..."
       $("<option />", {
          "selected": "selected",
-         "value"   : "",
-         "text"    : ""
-      }).appendTo("nav select");
+         "value"   : " ",
+         "text"    : "",
+      }).appendTo("nav div select");
       
       // Populate dropdown with menu items
       $("nav a").each(function() {
@@ -18,12 +23,12 @@
        $("<option />", {
            "value"   : el.attr("href"),
            "text"    : el.text()
-       }).appendTo("nav select");
+       }).appendTo("nav div select");
       });
       
 	   // To make dropdown actually work
 	   // To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
-      $("nav select").change(function() {
+      $("nav div select").change(function() {
         window.location = $(this).find("option:selected").val();
         });
 	 
