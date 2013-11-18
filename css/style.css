@@ -195,29 +195,14 @@ nav ul li a:hover, .active {
     /* background-size:contain; */
     color: #12306E;
 }
-nav div {
-    position:absolute;
-    right:20px;
-    top:50px;
-    display: none;
-<<<<<<< HEAD
-}
-nav div i {
-    position:absolute;
-    font-size: 60px;
-    padding:10px;
-    background: #a3b8c2;
-}
 nav select {
-    position:relative;
-    z-index:1;
-    background:transparent;
-=======
+    margin:20px 20px 0 0;;
+    display: none;
     /* background: url(../images/downArrow.png) no-repeat right #a3b8c2; */
     /* background-size:contain; */
->>>>>>> 879428546a8a1e3a37c5f096d32bb6f74c128af6
     width: 80px;
     height: 80px;
+    padding: 5px;
     text-align:right;
     font-size: 30px;
     line-height: 1;
@@ -226,11 +211,6 @@ nav select {
     -webkit-appearance: none;
     overflow: hidden;
 }
-<<<<<<< HEAD
-nav select option {
-    
-}
-=======
 
 /*-- bottom secondary nav and address | need this on other pages--*/
 .subnav{
@@ -280,7 +260,6 @@ address{
 home page slider
 
 ===============================*/
->>>>>>> 879428546a8a1e3a37c5f096d32bb6f74c128af6
 .slides li {
     position:relative;
 }
@@ -315,13 +294,6 @@ home page slider
     margin-top:30px;
     background: url(../images/rightArrow.png) right no-repeat;
 }
-<<<<<<< HEAD
-.brownBtn {
-    background-color:#a88c5e;
-    border: 1px solid #d6d5d3;
-    color:#fff;
-}
-=======
 .brown {
     background-color:#da5f0b;
     border: 1px solid #f1f1f1;
@@ -400,4 +372,3 @@ footer p{
 
 
 
->>>>>>> 879428546a8a1e3a37c5f096d32bb6f74c128af6

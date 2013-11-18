@@ -1,11 +1,5 @@
 /*ANYTHING BELOW 960PX GOES HERE*/
 @media (max-width: 600px) {
-    nav ul { display: none; }
-    nav div { display: inline-block; }
-}
-@media (min-width: 601px) and (max-width: 720px) {
-    nav ul li a {
-    padding:80px 12px 10px 12px;
-    margin: 0;
-    }
+  nav ul     { display: none; }
+  nav select { display: inline-block; }
 }
