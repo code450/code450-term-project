@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Helping Hands Home Services | Home</title>
+<title>Helping Hands Home Services</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, user-scalable=no">
 <!--IMPORTANT THAT STYLESHEET THIS GOES FIRST-->
 <link rel="stylesheet" href="css/reset.css" type="text/css"/>
+<!--ICON FONT-->
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 <!--MAIN STYLESHEET-->
 <link rel="stylesheet" href="css/style.css" type="text/css"/>
 <!--RESPONSIVE STYLESHEET-->
@@ -21,7 +23,8 @@
 <script type="text/javascript">
 $(window).load(function() {
   $('.flexslider').flexslider({
-    animation: "slide"
+    animation: "fade",
+    pauseOnHover: "true",
   });
 });
 </script>
@@ -31,15 +34,14 @@ $(window).load(function() {
     <div id="innerContainer">
         <header>
             <hgroup>
-                <a href="index.html"><h1>Helping Hands Home Services</h1></a>
+                <h1>Helping Hands Home Services</h1>
                 <h2>A little extra help with a lot of love and care!</h2>
-                
             </hgroup>
             <nav>
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
                     <li><a href="#">F.A.Q.</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -51,16 +53,16 @@ $(window).load(function() {
                     <li>
                         <div class="slideCaption">
                             <h1>The Right Choice</h1>
-                            <div>When making important decisions about your care or the care of loved ones, making the right choice can be tough.<br /><br />Let us help!
+                            <div class="mobileHide">When making important decisions about your care or the care of loved ones, making the right choice can be tough.<br /><br />Let us help!
                             </div>
-                            <a class="btn brown" href="#">Learn More</a>
+                            <a class="btn brownBtn" href="#">Learn More</a>
                         </div>
-                        <img src="images/home_photo1.jpg" />
+                        <img src="images/photo1.jpg" />
                     </li>
                     <li>
                         <div class="slideCaption">
                             <h1>Our Services</h1>
-                            <div>
+                            <div class="mobileHide">
                                 <ul>
                                     <li>Personal Care</li>
                                     <li>Respite Care</li>
@@ -69,16 +71,16 @@ $(window).load(function() {
                                     <li>and More!</li>
                                 </ul>
                             </div>
-                            <a class="btn brown" href="#">See All Our Services</a>
+                            <a class="btn brownBtn" href="#">See All Our Services</a>
                         </div>
-                        <img src="images/home_photo2.jpg" />
+                        <img src="images/photo2.jpg" />
                     </li>
                     <li>
                         <div class="slideCaption">
                             <h1>Our Staff</h1>
-                            <div>The staff at Helping Hands Home Services is comitted to providing exceptional service in your home where you feel most comfortable, independent, and safe.
+                            <div class="mobileHide">The staff at Helping Hands Home Services is comitted to providing exceptional service in your home where you feel most comfortable, independent, and safe.
                             </div>
-                            <a class="btn brown" href="#">Learn More</a>
+                            <a class="btn brownBtn" href="#">Learn More</a>
                         </div>
                         <img src="images/photo3.jpg" />
                     </li>
@@ -86,7 +88,6 @@ $(window).load(function() {
             </div>
         </div>
         <footer>
-        	<p>&copy2013. Helping Hands Home Services</p>
         </footer>
     </div>
 </div>

@@ -1,5 +1,29 @@
 /*ANYTHING BELOW 960PX GOES HERE*/
 @media (max-width: 600px) {
-  nav ul     { display: none; }
-  nav select { display: inline-block; }
+    nav ul { display: none; }
+    nav div { display: inline-block; }
+    .mobileHide {display:none;}
+    .slideCaption h1 {
+        margin-bottom:0;
+        padding-bottom:0;
+        border:none;
+    }
+    .slideCaption {
+        width:200px;
+        top:0px;
+        left: 15%;
+        padding: 20px 10px;
+    }
+    .slideCaption a{
+        margin-top:20px;
+    }
+}
+@media (min-width: 601px) and (max-width: 720px) {
+    .slideCaption {
+        top:15%;
+    }
+    nav ul li a {
+        padding:80px 12px 10px 12px;
+        margin: 0;
+    }
 }

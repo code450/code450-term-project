@@ -1,158 +1,19 @@
-
-
 /*ONLY FULL WIDTH STYLES GO HERE*/
-
-/*=============================
-
-code450 Helping Hands Home Services
-Main CSS Stylesheet
-
-colors:
-orange: #da5f0b;
-dark blue: #12306E;
-light blue: #c2cddc;
-white: #fff;
-
-
-===============================*/
-
-
-
-
-
-
-/*=============================
-
-general styles
-
-===============================*/
-
-
-body{
-	background: #f1f1f1;
-	color: #da5f0b;
-	font-family: Questrial, Arial, sans-serif;
-}
-
-
-/*=============================
-
-typography
-
-===============================*/
-@import url(http://fonts.googleapis.com/css?family=Sansita+One);
-@import url(http://fonts.googleapis.com/css?family=Questrial);
-
-h1, h2, h3{
-	font-weight: 300;
-	margin: 0;
-	line-height: 45px;
-}
-
-h4, h5, h6{
-	
-	margin: 5px 0 5px 0;
-	
-}
-
-h1{
-	font-size: 48px;
-}
-
-h2{
-	/* font-weight: bold; */
-	font-size: 36px;
-}
-
-h3{
-	font-size: 30px;
-}
-
-h4{
-	font-size: 18px;
-	margin: 10px 0;/* top and bottom 10px, right and left 0*/
-}
-
-h5{
-	font-size: 13px;
-	margin: 0;
-	text-transform: capitalize;
-}
-
-p{
-	margin: 0 0 10px 0;
-	font-size: 18px;
-}
-
-
-h3.lead{
-	font-size: 30px;
-	font-weight: 300;
-	line-height: 35px;
-	text-align: left;
-	font-style: italic;
-	font-family: 'Sansita One', cursive, Arial, sans-serif;
-}
-
-p.lead{
-	font-size: 18px;
-	margin-left: 25px;
-	line-height: 25px;
-	text-align: left;
-	font-style: italic;
-	font-family: Questrial, Arial, sans-serif;
-}
-
-
-/*=============================
-
-layout styles
-
-===============================*/
-
 
 #outerContainer {
     margin:30px auto;
-   -webkit-box-shadow: 0px -1px 2px rgba(50, 50, 50, 0.75);
+    -webkit-box-shadow: 0px -1px 2px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    0px -1px 2px rgba(50, 50, 50, 0.75);
     box-shadow:         0px -1px 2px rgba(50, 50, 50, 0.75);
     background:#f1f1f1 url(../images/bg.png);
 }
-
 #innerContainer {
     max-width:960px;
     margin:0 auto;
 }
-
 header hgroup, header h1{
     display:inline-block;
 }
-
-
-
-
-.wrapper{/*wrapper around content div to be used on about us, services, faq, and contact pages*/
-	width: 940px;
-	padding: 0 10px;
-	margin: 0 auto;
-
-}
-
-#secondary-nav{/*background for bottom secondary nav*/
-	background: url(../images/bg.png);
-	height: 250px;
-	-webkit-box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.75);
-    	-moz-box-shadow:    0px 1px 2px rgba(50, 50, 50, 0.75);
-    		box-shadow:         0px 1px 2px rgba(50, 50, 50, 0.75);
-	
-}
-
-
-/*=============================
-
-navigation
-
-===============================*/
 nav, nav ul li {
     display:inline-block;
 }
@@ -163,10 +24,10 @@ hgroup {
     margin: 20px 0 0 20px;
 }
 header h1 {
-    background: transparent url(../images/hh_logo.png)no-repeat;
+    background: transparent url(../images/logo.gif)no-repeat;
     text-indent: -9999px;
-    height:143px;
-    width:250px;
+    height:100px;
+    width:140px;
     background-size: contain;
     display:inline-block;
 }
@@ -182,84 +43,46 @@ nav {
 }
 nav ul li a {
     display:block;
-    padding:80px 10px 10px 10px;
+    padding:80px 20px 10px 20px;
     margin: 0 5px;
     text-decoration:none;
     font-weight:bold;
-    color:#da5f0b;
-    font-size: 24px;
-    font-family: Questrial, Arial, sans-serif;
+    color:#a88c5e;
 }
 nav ul li a:hover, .active {
-    background: url(../images/about_hover.png) no-repeat top center;
-    /* background-size:contain; */
-    color: #12306E;
+    background: url(../images/menuSelected.png) no-repeat top center #a3b8c2;
+    background-size:contain;
+    color:#fff;
+}
+nav div {
+    position:absolute;
+    right:20px;
+    top:50px;
+    display: none;
+}
+nav div i {
+    position:absolute;
+    font-size: 60px;
+    padding:10px;
+    background: #a3b8c2;
 }
 nav select {
-    margin:20px 20px 0 0;;
-    display: none;
-    /* background: url(../images/downArrow.png) no-repeat right #a3b8c2; */
-    /* background-size:contain; */
+    position:relative;
+    z-index:1;
+    background:transparent;
     width: 80px;
     height: 80px;
-    padding: 5px;
     text-align:right;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 1;
-    /* border: 1px solid #a3b8c2; */
+    border: 1px solid #a3b8c2;
     border-radius: 0;
     -webkit-appearance: none;
     overflow: hidden;
 }
-
-/*-- bottom secondary nav and address | need this on other pages--*/
-.subnav{
-	float: left;
-	margin-top: 30px;
+nav select option {
+    
 }
-
-.subnav li{
-	/* text-align: center; */
-	margin-left: 10px;
-}
-.subnav ul li a{
-	list-style: none;
-	display: block;
-	text-decoration: none;
-	text-align: left;
-	font-weight: 200;
-	color:#da5f0b;
-	font-size: 24px;
-	font-family: Questrial, Arial, sans-serif;
-	height: 30px;
-	/* width: 100%; */
-	/* position: relative; */
-	padding: 0 10px;
-	margin: 10px 0 -5px -10px;
-}
-
-.subnav ul li a:hover, .active{
-	color: #12306e;
-	
-}
-
-address{
-	float: right;
-	text-align: left;
-	font-weight: 200;
-	font-size: 24px;
-	font-family: Questrial, Arial, sans-serif;
-	padding: 5px;
-	line-height: 25px;
-	margin: -208px -750px -5px 0;
-}
-
-
-/*=============================
-
-home page slider
-
-===============================*/
 .slides li {
     position:relative;
 }
@@ -276,11 +99,12 @@ home page slider
     padding-bottom:10px;
     border-bottom: 1px solid #fff;
     margin-bottom:10px;
-    color: #12306e;
 }
 .slideCaption div {
     font-size:22px;
-    color: #12306e;
+}
+.slideCaption a {
+    margin-top:30px;
 }
 .slideCaption ul li{
     list-style-type:disc;
@@ -291,84 +115,10 @@ home page slider
     font-weight:bold;
     text-decoration:none;
     display:block;
-    margin-top:30px;
     background: url(../images/rightArrow.png) right no-repeat;
 }
-.brown {
-    background-color:#da5f0b;
-    border: 1px solid #f1f1f1;
-    color:#f1f1f1;
+.brownBtn {
+    background-color:#a88c5e;
+    border: 1px solid #d6d5d3;
+    color:#fff;
 }
-
-
-/*=============================
-
-about us & services layout styles
-
-===============================*/
-
-.about{
-	height: 1300px;
-}
-
-/*diamond divider image - about and services page*/
-.divider{
-	background: url(../images/about_divider.png) no-repeat;
-	width: 328px;
-	height: 28px;
-	margin-top: 10px;
-	position: relative;
-	margin: 0 auto;
-	padding: 40px 0;
-}
-
-/*bullets for payment options on services page*/
-.payment ul li{
-	display: list-item;
-	list-style-type: disc;
-	margin-left: 10px;
-}
-
-/*=============================
-
-global column styles
-
-===============================*/
-
-.column{
-	float: left;
-	margin-right: 62px;
-	margin-top: 50px;
-}
-
-.four{
-	width: 350px;
-	text-align: center;
-	margin-right: 80px;
-	margin-left: 40px;
-	
-}
-
-
-
-
-
-/*=============================
-
-footer styles
-
-===============================*/
-
-footer{
-	/* background:#f1f1f1; */
-	height: 50px;
-	padding: 10px;
-}
-
-footer p{
-	margin-top: 300px;
-}
-
-
-
-
