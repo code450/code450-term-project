@@ -1,0 +1,199 @@
+/*=============================
+
+code450 Helping Hands Home Services
+Subpages CSS Stylesheet
+
+This stylesheet
+handles the about, services, faq, and contact page
+
+colors:
+orange: #da5f0b;
+dark blue: #12306E;
+medium blue: #547EA5;
+light blue: #c2cddc;
+white: #fff;
+black: #000;
+
+
+===============================*/
+
+.wrapper{/*wrapper around content div to be used on about us, services, faq, and contact pages*/
+	width: 940px;
+	padding: 0 10px;
+	margin: 0 auto;
+
+}
+
+
+/*diamond divider image - about page don't change*/
+#divider1{
+	background: url(../images/divider_blue.png) no-repeat;
+	width: 100%;
+	height: 28px;
+	margin-top: 350px;
+	margin-left: 300px;
+	position: absolute;
+	/* margin: 0 auto; */
+	padding: 50px 0;
+	text-align: center;
+	
+}
+
+/*diamond divider image - services page don't change*/
+#divider2{
+	background: url(../images/divider_blue.png) no-repeat;
+	width: 100%;
+	height: 28px;
+	margin-top: -600px;
+	margin-left: 300px;
+	position: absolute;
+	/* margin: 0 auto; */
+	padding: 50px 0;
+	text-align: center;
+	
+}
+
+
+
+/*=============================
+
+about us layout styles
+
+===============================*/
+
+.about{/*<section id="column-content" class="about">*/
+	height: 2000px;
+}
+
+
+/*=============================
+
+our services layout styles
+
+===============================*/
+.services{/*sets the height of the <section id="column-content" class="services">*/
+	height: 2100px;
+}
+
+hr{
+	border-style: dashed;
+	color: #da5f0b;
+}
+
+/*bullets for payment options on services page*/
+.payment ul li{
+	display: list-item;
+	list-style-type: disc;
+	margin-left: 45px;
+}
+
+.list ul li{
+	border-bottom: dotted;
+	padding: 7px 0;
+}
+
+.list ul li:nth-last-child(1){
+	border: none;
+}
+
+/*=============================
+
+faq layout styles
+
+===============================*/
+/* your content layout styles go here*/
+/*#faqs div{ height:0; overflow:hidden; }*/
+#faqs { position:relative; }
+#faqs.hover{color:#1206e;}
+#faqs h3	{ font-size: 24px; cursor:pointer; }
+#faqs h3.active	{ color:#12306E; background: none;}
+#faqs div   { position:relative; height: auto; }
+#faqs div p	{ padding:0; margin-bottom:15px; }
+
+
+
+
+
+
+
+/*=============================
+
+contact us layout styles
+
+===============================*/
+/* your content layout styles go here
+
+can place .three{} here
+.column{} is called in the global 
+styles so you don't have to write
+that again.
+
+*/
+
+
+
+
+
+
+
+
+
+/*=============================
+
+global column styles
+
+===============================*/
+
+.column{/*don't change please: <div class="column four"> */
+	float: left;
+	margin-right: 62px;
+	margin-top: 50px;
+}
+
+.four{/*don't change please: about us "bio columns" <div class="column four"> specifically calls class="four"*/
+	width: 350px;/*sets the width for the content of column four*/
+	text-align: center;
+	margin-right: 80px;
+	margin-left: 40px;
+	
+}
+
+
+.bio{/*position to move bio story columns down on the page. <div class="column four bio"> specifically calls class bio.*/
+	margin-top: 150px;
+}
+
+
+.five{/* don't change please: about us "the right choice" & services "payment" <div class="column five"> specifically calls class="five"*/
+	width: 720px;/*sets the width for the content of column five*/
+	text-align: center;
+	margin-right: 80px;
+	margin-left: -5px;
+	margin-top: 30px;
+	
+}
+
+.last{/*position to move payment option section down on the page. <div class="column five last"> specifically calls class last.*/
+	margin-top: 150px;
+}
+
+
+/*============================= 
+
+uncomment clearfix if needed
+
+===============================*/
+
+/* .clearfix:before,
+.clearfix:after{
+	content: "";
+	display: table;
+}
+
+.clearfix:after{
+	clear: both;
+}
+
+.clearfix:{
+	zoom: 1; for ie6/7 (trigger hasLayout) check css-tricks
+} */

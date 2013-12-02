@@ -1,29 +1,69 @@
 /*ANYTHING BELOW 960PX GOES HERE*/
-@media (max-width: 600px) {
-    nav ul { display: none; }
-    nav div { display: inline-block; }
+@media (max-width: 420px) {
+	#rightSide img {
+		float:none;
+		width:100%;
+	}
+}
+@media (max-width: 624px) {
     .mobileHide {display:none;}
     .slideCaption h1 {
         margin-bottom:0;
         padding-bottom:0;
         border:none;
+		text-align:center;
+		padding-top:10%;
     }
     .slideCaption {
-        width:200px;
-        top:0px;
-        left: 15%;
-        padding: 20px 10px;
-    }
+    	width: 100%;
+    	top: 0;
+    	left: 0;
+    	padding: 0;
+    	height: 100%;
+	}
     .slideCaption a{
-        margin-top:20px;
+        margin: 20px auto;
+		width: 60%;
+    }
+	.homepage h1.welcome {
+		padding-left:0;
+		text-align:center;
+	}
+	.flex-direction-nav a {
+		top:102px;
+	}
+}
+@media (min-width: 625px) and (max-width: 755px) {
+    .slideCaption {
+        top:10%;
     }
 }
-@media (min-width: 601px) and (max-width: 720px) {
-    .slideCaption {
-        top:15%;
-    }
-    nav ul li a {
+@media (max-width: 755px) {
+	nav ul { display: none; }
+    nav div { display: inline-block; }	
+}
+@media (max-width: 959px) {
+	#bgContainer {
+		height:auto;
+		margin-bottom:0;
+	}
+	nav {
+		padding-right:10px;
+	}
+	nav ul li a {
         padding:80px 12px 10px 12px;
         margin: 0;
     }
+	.homepage {
+		padding:10px;
+	}
+	.homepage h1.welcome {
+		padding-left:0;
+	}
+	#rightSide, #leftSide {
+		display:block;
+		width:auto;
+		padding:0;
+	}
+	#ppl1,#ppl2 {width:49%;}
 }

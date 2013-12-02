@@ -8,12 +8,15 @@
 <link rel="stylesheet" href="css/reset.css" type="text/css"/>
 <!--ICON FONT-->
 <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<!--FONTS-->
+<script>var __adobewebfontsappname__ = "code"</script>
+<script src="http://use.edgefonts.net/questrial:n4:all;sansita-one:n4:all.js"></script>
 <!--MAIN STYLESHEET-->
 <link rel="stylesheet" href="css/style.css" type="text/css"/>
-<!--RESPONSIVE STYLESHEET-->
-<link rel="stylesheet" href="css/responsive.css" type="text/css"/>
 <!--SLIDER STYLESHEET-->
 <link rel="stylesheet" href="css/flexslider.css" type="text/css"/>
+<!--RESPONSIVE STYLESHEET-->
+<link rel="stylesheet" href="css/responsive.css" type="text/css"/>
 <!--JQUERY-->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 <!--MENU JS-->
@@ -31,7 +34,8 @@ $(window).load(function() {
 </head>
 <body>
 <div id="outerContainer">
-    <div id="innerContainer">
+  <div id="bgContainer">
+    <div class="innerContainer">
         <header>
             <hgroup>
                 <h1>Helping Hands Home Services</h1>
@@ -40,56 +44,79 @@ $(window).load(function() {
             <nav>
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">F.A.Q.</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="faq.html">F.A.Q.</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
-        <div id="homepage">
-            <div class="flexslider">
-                <ul class="slides">
-                    <li>
-                        <div class="slideCaption">
-                            <h1>The Right Choice</h1>
-                            <div class="mobileHide">When making important decisions about your care or the care of loved ones, making the right choice can be tough.<br /><br />Let us help!
-                            </div>
-                            <a class="btn brownBtn" href="#">Learn More</a>
-                        </div>
-                        <img src="images/photo1.jpg" />
-                    </li>
-                    <li>
-                        <div class="slideCaption">
-                            <h1>Our Services</h1>
-                            <div class="mobileHide">
-                                <ul>
-                                    <li>Personal Care</li>
-                                    <li>Respite Care</li>
-                                    <li>Companionship</li>
-                                    <li>Meal Preparation</li>
-                                    <li>and More!</li>
-                                </ul>
-                            </div>
-                            <a class="btn brownBtn" href="#">See All Our Services</a>
-                        </div>
-                        <img src="images/photo2.jpg" />
-                    </li>
-                    <li>
-                        <div class="slideCaption">
-                            <h1>Our Staff</h1>
-                            <div class="mobileHide">The staff at Helping Hands Home Services is comitted to providing exceptional service in your home where you feel most comfortable, independent, and safe.
-                            </div>
-                            <a class="btn brownBtn" href="#">Learn More</a>
-                        </div>
-                        <img src="images/photo3.jpg" />
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <footer>
-        </footer>
-    </div>
+        <div class="homepage">
+            <img src="images/home_holdinghands.jpg" width="700px" style="display:block; margin:0 auto;" />
+        </div><!--homepage-->
+	</div><!--innerContainer-->
+  </div> <!--bgContainer-->
+	<div class="innerContainer">
+		<div class="homepage">
+			<h1 class="welcome">Welcome to</h1>
+			<h2 class="welcome">Helping Hands Home Services</h2>
+			<div class="welcome">
+				Are you in search of quality car for yourself or a loved one? If so, Helping Hands Home Service would be honored to lend a helping hand!
+			</div>
+			<div id="leftSide">
+				<h1>Our Mission</h1><br>
+				<img src="images/caregiver.jpg" alt="PEOPLE" />
+				<div>Is to create a sustainable value with the clients and their families, by delivering outstanding services and business practices that help our clients experience safe, dependable and professional services that will enhance their quality of life in the comforts of their own home.</div>
+			</div>
+			<div id="rightSide">
+				<h1>Our passion... PEOPLE</h1><br>
+				<div id="ppl1">
+					<h2>P</h2><div>rofessional</div><br>
+					<h2>E</h2><div>thics</div><br>
+					<h2>O</h2><div>pportunity</div><br>
+					<h2>P</h2><div>rivacy</div><br>
+					<h2>L</h2><div>oving care</div><br>
+					<h2>E</h2><div>quality</div>
+				</div>
+				<div id="ppl2">
+					<h2>P</h2><div>assionate</div><br>
+					<h2>E</h2><div>ncouraging</div><br>
+					<h2>O</h2><div>bservant</div><br>
+					<h2>P</h2><div>actient</div><br>
+					<h2>L</h2><div>oyal</div><br>
+					<h2>E</h2><div>mpowering</div>
+				</div>
+				<div id="ppl3">
+					<h2>P</h2><div>roviding quality car to the</div><br>
+					<h2>E</h2><div>lderly and disabled,while allowing them the</div><br>
+					<h2>O</h2><div>pportunity to remain in the</div><br>
+					<h2>P</h2><div>rivacy of their own home where they feel most</div><br>
+					<h2>L</h2><div>iberated to</div><br>
+					<h2>E</h2><div>nhance their quality of life!</div>
+				</div>
+			</div>
+		</div><!--homepage-->
+	</div><!--innerContainer-->
+    <footer>
+	  <div id="footerbg">
+		<div class="innerContainer">
+			<div id="footerLeft">
+				<div id="info">Information</div>
+				<a href="about.html">About Us</a>
+				<a href="services.html">Services</a>
+				<a href="faq.html">FAQ</a>
+				<a href="contact.html">Contact Us</a>
+			</div>
+			<div id="footerRight">
+				<div>5000 Portsmouth Blvd. Suite 2<br>Porstmouth, VA 23701</div><br>
+				<div>Phone: 757-488-1111<br>Fax: 757-488-1116</div>
+			</div>
+		</div>
+  	  </div>
+		<div class="innerContainer">
+			<div>&copy;2013 &#124; <a href="privacy.html" style="display:inline-block">Privacy Policy</a></div>
+		</div>
+   	</footer>
 </div>
 </body>
 </html>

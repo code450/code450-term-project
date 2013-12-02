@@ -1,42 +1,69 @@
+/*HELPING HANDS HOME SERVICES (c)2013 ALL RIGHTS RESERVED*/
 /*ONLY FULL WIDTH STYLES GO HERE*/
 
-#outerContainer {
-    margin:30px auto;
-    -webkit-box-shadow: 0px -1px 2px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    0px -1px 2px rgba(50, 50, 50, 0.75);
-    box-shadow:         0px -1px 2px rgba(50, 50, 50, 0.75);
-    background:#f1f1f1 url(../images/bg.png);
+/*FONTS
+*************************************************************/
+.hfont, h1, h2, h3{
+	font-family: sansita-one;
 }
-#innerContainer {
+.sfont, body{
+	font-family: questrial;
+	color: #1c2555;
+}
+a {
+	text-decoration:none;
+	color:#1c2555;
+}
+
+/*BODY SETUP
+*************************************************************/
+#outerContainer {
+    margin:0 auto 30px auto;
+    /*-webkit-box-shadow: 0px -1px 2px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px -1px 2px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px -1px 2px rgba(50, 50, 50, 0.75);*/
+}
+#bgContainer {
+    background:#f1f1f1 url(../images/bg.png);
+	height:400px;
+	margin-bottom:100px;
+}
+#bgContainer2 {
+    background:#f1f1f1 url(../images/bg.png);
+	padding-bottom:5px;
+}
+.innerContainer {
     max-width:960px;
     margin:0 auto;
 }
+
+/*HEADER
+********************************************************************/
 header hgroup, header h1{
     display:inline-block;
 }
-nav, nav ul li {
-    display:inline-block;
-}
 header {
-    margin-bottom:30px;
+    padding-bottom:30px;
 }
 hgroup {
-    margin: 20px 0 0 20px;
+    margin: 20px 0 0 5px;
 }
 header h1 {
-    background: transparent url(../images/logo.gif)no-repeat;
+    background: transparent url(../images/logo.png) no-repeat;
     text-indent: -9999px;
-    height:100px;
-    width:140px;
+    height:107px;
+    width:180px;
     background-size: contain;
     display:inline-block;
 }
 header h2 {
-    /*text-indent: -9999px;*/
-    
-    /*TEMPORARY TILL WE GET ACTUAL LOGO*/
-    /**/font-size:9px;
-    /**/font-style: italic;
+    display:none;
+}
+
+/*NAVIGATION
+*************************************************************************/
+nav, nav ul li {
+    display:inline-block;
 }
 nav {
     float:right;
@@ -47,11 +74,11 @@ nav ul li a {
     margin: 0 5px;
     text-decoration:none;
     font-weight:bold;
-    color:#a88c5e;
+    color:#547ea5;
+	font-size: 24px;
 }
 nav ul li a:hover, .active {
-    background: url(../images/menuSelected.png) no-repeat top center #a3b8c2;
-    background-size:contain;
+    background: url(../images/menuSelected.png) repeat-x top center #547ea5;
     color:#fff;
 }
 nav div {
@@ -64,7 +91,7 @@ nav div i {
     position:absolute;
     font-size: 60px;
     padding:10px;
-    background: #a3b8c2;
+    background: #547ea5;
 }
 nav select {
     position:relative;
@@ -83,6 +110,10 @@ nav select {
 nav select option {
     
 }
+
+/*SLIDES
+***************************************************************/
+.flex-prev, .flex-next {text-decoration:none;}
 .slides li {
     position:relative;
 }
@@ -93,6 +124,7 @@ nav select option {
     left:50px;
     padding:20px;
     background:#7a95a9;
+	color:#1c2555;
 }
 .slideCaption h1 {
     font-size:32px;
@@ -110,6 +142,31 @@ nav select option {
     list-style-type:disc;
     margin-left: 25px;
 }
+
+/*FOOTER
+*****************************************************************/
+footer {
+	padding-top:20px;
+}
+div#footerbg {
+	background:#f1f1f1 url(../images/bg.png);
+	padding: 20px 0;
+}
+footer a { display:block }
+footer div#footerLeft, footer div#footerRight {
+	display:inline-block;
+	font-size:28px;
+}
+footer div#footerRight {
+	text-align:right;
+	float:right;
+}
+footer div#info {
+	font-size:32px;
+}
+
+/*BUTTONS
+*****************************************************************/
 .btn {
     padding:10px;
     font-weight:bold;
@@ -118,7 +175,82 @@ nav select option {
     background: url(../images/rightArrow.png) right no-repeat;
 }
 .brownBtn {
-    background-color:#a88c5e;
+    background-color:#1c2555;
     border: 1px solid #d6d5d3;
     color:#fff;
+}
+
+/*HOME
+***************************************************************/
+.homepage h1.welcome {
+	padding-left:100px;
+	font-size:50px;
+}
+.homepage h2.welcome {
+	text-align:center;
+	font-family: questrial;
+	font-size:50px;
+}
+.homepage div.welcome {
+	font-size:32px;
+	margin:20px 0;
+}
+#rightSide, #leftSide {
+	vertical-align: top;
+	padding: 20px 0;
+}
+#leftSide {
+	padding-right:9%;
+	font-size:28px;
+}
+#rightSide {
+	font-size:24px;
+}
+#rightSide div, #rightSide h2 {
+	display:inline-block;
+}
+#leftSide h1, #rightSide h1 {
+	font-size:40px;
+}
+#leftSide img {
+	float:right;
+}
+#ppl1,#ppl2 {width:20%;}
+
+/*SUB PAGES
+****************************************************************/
+
+#subs>h1, #subs>h2 {
+	padding: 40px 0;
+}
+
+h1.lead {
+	font-size:50px;
+}
+h2.lead {
+	font-size:40px;
+}
+
+p {
+	font-family: questrial;
+	font-size:24px;
+}
+#nicole, #dianne {
+	display:inline-block;
+	width:40%;
+	vertical-align:top;
+}
+#dianne {
+	padding-right:20px;
+}
+
+#divider{
+	background: url(../images/divider_blue.png) no-repeat;
+	width: 326px;
+	height: 28px;
+	position: absolute;
+	/* margin: 0 auto; */
+	margin: 0 auto;
+	text-align: center;
+	padding:20px 0;	
 }
